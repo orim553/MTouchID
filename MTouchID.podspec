@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '8.0'
 s.name = "MTouchID"
 s.summary = "MTouchID lets the user to use the TouchID System easily."
 s.requires_arc = true
@@ -24,10 +24,7 @@ s.source = { :git => "https://github.com/orim553/MTouchID.git", :tag => "#{s.ver
 
 # 7
 s.framework = "UIKit"
-s.framwork = "LocalAuthentication"
+s.framework = "LocalAuthentication"
 # 8
 s.source_files = "MTouchID/**/*.{swift}"
-
-# 9
-s.resources = "MTouchID/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
