@@ -5,7 +5,8 @@ MTouchID is a library that can help you use ```TouchID``` in youre project, with
 If You are using ios 8.0 + and you want to enter TouchID to youre project, you came to the right place :boom: :dizzy: :fire:
 
 ## ScreenShots
-
+<img src="https://github.com/orim553/MTouchID/blob/master/ScreenShots/ScreenShot1.png" width="250">
+<img src="https://github.com/orim553/MTouchID/blob/master/ScreenShots/ScreenShot2.png" width="250">
 
 ## Features
 - [x] Easily use TouchID in your project without breaking your head for hours looking for the bug
