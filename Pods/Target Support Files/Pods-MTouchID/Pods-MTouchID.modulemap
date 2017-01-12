@@ -1,0 +1,6 @@
+framework module Pods_MTouchID {
+  umbrella header "Pods-MTouchID-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19344E069EF44387E9566901 /* Pods_MTouchID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683F46730B690D14D3DBFCF /* Pods_MTouchID.framework */; };
 		3E8A34C81E27C6D500BCA7B8 /* MTouchID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8A34C61E27C6D500BCA7B8 /* MTouchID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E8A34CF1E27C6E300BCA7B8 /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A34CE1E27C6E300BCA7B8 /* TouchID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E8A34C31E27C6D500BCA7B8 /* MTouchID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTouchID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8A34C61E27C6D500BCA7B8 /* MTouchID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTouchID.h; sourceTree = "<group>"; };
 		3E8A34C71E27C6D500BCA7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8A34CE1E27C6E300BCA7B8 /* TouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TouchID.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4421A74591ED14C71F8A611B /* Pods-MTouchID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTouchID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTouchID/Pods-MTouchID.debug.xcconfig"; sourceTree = "<group>"; };
+		4B69A498E9E09166AB793E4F /* Pods-MTouchID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTouchID.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTouchID/Pods-MTouchID.release.xcconfig"; sourceTree = "<group>"; };
+		7683F46730B690D14D3DBFCF /* Pods_MTouchID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTouchID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19344E069EF44387E9566901 /* Pods_MTouchID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E37EEF0FFD5A04E13C95D68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4421A74591ED14C71F8A611B /* Pods-MTouchID.debug.xcconfig */,
+				4B69A498E9E09166AB793E4F /* Pods-MTouchID.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E8A34B91E27C6D500BCA7B8 = {
 			isa = PBXGroup;
 			children = (
 				3E8A34C51E27C6D500BCA7B8 /* MTouchID */,
 				3E8A34C41E27C6D500BCA7B8 /* Products */,
+				0E37EEF0FFD5A04E13C95D68 /* Pods */,
+				844323276E92AEED8D7F5A4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +66,17 @@
 			children = (
 				3E8A34C61E27C6D500BCA7B8 /* MTouchID.h */,
 				3E8A34C71E27C6D500BCA7B8 /* Info.plist */,
+				3E8A34CE1E27C6E300BCA7B8 /* TouchID.swift */,
 			);
 			path = MTouchID;
+			sourceTree = "<group>";
+		};
+		844323276E92AEED8D7F5A4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7683F46730B690D14D3DBFCF /* Pods_MTouchID.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E8A34CB1E27C6D500BCA7B8 /* Build configuration list for PBXNativeTarget "MTouchID" */;
 			buildPhases = (
+				749B9B60AFCBCE248B844294 /* [CP] Check Pods Manifest.lock */,
 				3E8A34BE1E27C6D500BCA7B8 /* Sources */,
 				3E8A34BF1E27C6D500BCA7B8 /* Frameworks */,
 				3E8A34C01E27C6D500BCA7B8 /* Headers */,
 				3E8A34C11E27C6D500BCA7B8 /* Resources */,
+				7E0BC9F803FDD6FD854ECCE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 					3E8A34C21E27C6D500BCA7B8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 73QN96ZXDN;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +157,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		749B9B60AFCBCE248B844294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E0BC9F803FDD6FD854ECCE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTouchID/Pods-MTouchID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E8A34BE1E27C6D500BCA7B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8A34CF1E27C6E300BCA7B8 /* TouchID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +303,9 @@
 		};
 		3E8A34CC1E27C6D500BCA7B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4421A74591ED14C71F8A611B /* Pods-MTouchID.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73QN96ZXDN;
@@ -252,13 +318,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bipolar.MTouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3E8A34CD1E27C6D500BCA7B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B69A498E9E09166AB793E4F /* Pods-MTouchID.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73QN96ZXDN;
